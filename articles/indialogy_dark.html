@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MB-Articles</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: linear-gradient(120deg, #181c24 0%, #232b39 100%);
+            color: #e0e6ed;
+            margin: 0;
+        }
+        .header {
+            background: #232b39;
+            color: #fff;
+            padding: 32px 0 24px 0;
+            text-align: center;
+            letter-spacing: 1px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #fff;
+        }
+        .container {
+            display: flex;
+            max-width: 1200px;
+            margin: 40px auto;
+            margin-right: 280px;
+            gap: 32px;
+        }
+        .sidebar {
+            min-width: 220px;
+            background: #232b39;
+            border-radius: 10px;
+            box-shadow: 0 2px 12px rgba(26,35,126,0.10);
+            padding: 24px 18px;
+            height: fit-content;
+        }
+        .sidebar h3 {
+            margin-top: 0;
+            font-size: 1.2rem;
+            color: #90caf9;
+            border-bottom: 1px solid #394867;
+            padding-bottom: 8px;
+        }
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .sidebar li {
+            margin-bottom: 14px;
+        }
+        .sidebar a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: color 0.2s;
+        }
+        .sidebar a:hover {
+            color: #fff;
+            text-decoration: underline;
+        }
+        .article {
+            flex: 1;
+            max-width: 800px;
+            padding: 40px 36px 36px 36px;
+            background: #232b39;
+            border-radius: 12px;
+            box-shadow: 0 2px 16px rgba(26,35,126,0.18);
+        }
+        .article h2 {
+            font-size: 2.2rem;
+            margin-bottom: 18px;
+            color: #90caf9;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+        .article .meta {
+            font-size: 0.98rem;
+            color: #b0bec5;
+            margin-bottom: 22px;
+            font-style: italic;
+        }
+        .article p {
+            font-size: 1.13rem;
+            line-height: 1.8;
+            color: #e0e6ed;
+            margin-bottom: 20px;
+        }
+        .article ul, .article ol {
+            margin-left: 28px;
+            margin-bottom: 20px;
+        }
+        .article li {
+            margin-bottom: 8px;
+        }
+        .article blockquote {
+            border-left: 4px solid #90caf9;
+            background: #1a2233;
+            margin: 20px 0;
+            padding: 14px 22px;
+            font-style: italic;
+            color: #90caf9;
+        }
+        .article a {
+            color: #90caf9;
+            text-decoration: none;
+        }
+        .article a:hover {
+            color: #fff;
+            text-decoration: underline;
+        }
+        @media (max-width: 900px) {
+            .container {
+                flex-direction: column;
+                gap: 0;
+            }
+            .sidebar {
+                margin-bottom: 32px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Policy &amp; History Articles</h1>
+        <div style="font-size:1.1rem; margin-top:8px; color:#cfd8dc;">
+            Insights, analysis, and stories from the past and present
+        </div>
+    </div>
+    <div class="container">
+        <nav class="sidebar">
+            <h3>Articles</h3>
+            <ul>
+                <li><a href="#">The Evolution of Modern Policy</a></li>
+                <li><a href="#">Historical Turning Points</a></li>
+                <li><a href="#">Policy Analysis: 21st Century</a></li>
+                <li><a href="#">Lessons from History</a></li>
+                <li><a href="#">More...</a></li>
+            </ul>
+        </nav>
+        <div class="article">
+            <h2>Indialogy</h2>
+            <div class="meta">By Mirwais Balkhi &middot; June 2024</div>
+            <p>
+                 In the southwest of Delhi, on the western side of the Shamsi pond,
+                 in the middle of a narrow alley, there is an old mosque on the right
+                 hand side, in the courtyard of which is the tomb of Sheikh Abu al-Majd
+                 Abdul Haq Muhaddith Dehlavi, "known as Muhaddith Dehlavi". This Sheikh
+                 of Hadith is named after the people of Bukhara, from which his father 
+                 Sheikh Saifuddin migrated to India. Muhaddith Dehlavi learned Islamic 
+                 sciences (rational and traditional) at the age of 20 or 22. He also studied
+                 Hadith from Arab scholars for several years during his Hajj journey.
+            <!-- <blockquote>
+                "Those who cannot remember the past are condemned to repeat it." &mdash; George Santayana
+            </blockquote>
+            <p>
+                In this article, we explore key milestones in policy development, examining how historical events have influenced contemporary governance.
+            </p>
+            <ul>
+                <li>Ancient legal systems and their legacy</li>
+                <li>Major reforms in the 19th and 20th centuries</li>
+                <li>Contemporary policy challenges</li>
+            </ul>
+            <p>
+                For more information, visit <a href="#">our resources page</a>.
+            </p> -->
+        </div>
+    </div>
+</body>
+</html>

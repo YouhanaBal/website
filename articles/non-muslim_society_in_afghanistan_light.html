@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MB-Articles</title>
+    <style>
+        body {
+            background: linear-gradient(120deg, #f5f7fa 0%, #c3cfe2 100%);
+            margin: 0;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+        .header {
+            background: #2d3a4b;
+            color: #fff;
+            padding: 32px 0 24px 0;
+            text-align: center;
+            letter-spacing: 1px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+        .container {
+            display: flex;
+            max-width: 1200px;
+            margin: 40px auto;
+            margin-right: 280px;
+            gap: 32px;
+        }
+        .sidebar {
+            min-width: 220px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+            padding: 24px 18px;
+            height: fit-content;
+        }
+        .sidebar h3 {
+            margin-top: 0;
+            font-size: 1.2rem;
+            color: #2d3a4b;
+            border-bottom: 1px solid #e0e0e0;
+            padding-bottom: 8px;
+        }
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .sidebar li {
+            margin-bottom: 14px;
+        }
+        .sidebar a {
+            color: #1976d2;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: color 0.2s;
+        }
+        .sidebar a:hover {
+            color: #0d47a1;
+            text-decoration: underline;
+        }
+        .article {
+            flex: 1;
+            max-width: 800px;
+            padding: 40px 36px 36px 36px;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+        }
+        .article h2 {
+            font-size: 2.2rem;
+            margin-bottom: 18px;
+            color: #2d3a4b;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+        .article .meta {
+            font-size: 0.98rem;
+            color: #888;
+            margin-bottom: 22px;
+            font-style: italic;
+        }
+        .article p {
+            font-size: 1.13rem;
+            line-height: 1.8;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .article ul, .article ol {
+            margin-left: 28px;
+            margin-bottom: 20px;
+        }
+        .article li {
+            margin-bottom: 8px;
+        }
+        .article blockquote {
+            border-left: 4px solid #1976d2;
+            background: #f0f4fa;
+            margin: 20px 0;
+            padding: 14px 22px;
+            font-style: italic;
+            color: #2d3a4b;
+        }
+        .article a {
+            color: #1976d2;
+            text-decoration: none;
+        }
+        .article a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 900px) {
+            .container {
+                flex-direction: column;
+                gap: 0;
+            }
+            .sidebar {
+                margin-bottom: 32px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Policy &amp; History Articles</h1>
+        <div style="font-size:1.1rem; margin-top:8px; color:#cfd8dc;">
+            Insights, analysis, and stories from the past and present
+        </div>
+    </div>
+    <div class="container">
+        <nav class="sidebar">
+            <h3>Articles</h3>
+            <ul>
+                <li><a href="#">The Evolution of Modern Policy</a></li>
+                <li><a href="#">Historical Turning Points</a></li>
+                <li><a href="#">Policy Analysis: 21st Century</a></li>
+                <li><a href="#">Lessons from History</a></li>
+                <li><a href="#">More...</a></li>
+            </ul>
+        </nav>
+        <div class="article">
+            <h2>Invaders in Afghanistan</h2>
+            <div class="meta">By Mirwais Balkhi &middot; June 2024</div>
+            <p>
+                 Afghanistan has only a tiny  non- Muslim population, consisting of per
+                haps ten to twenty thousand Sikhs and Hindus long resident in Kabul and 
+                a few other cities. They were particularly important historically in Afghanistan’s 
+                international trade and still play a large role in the currency market. 
+                Until the  mid- twentieth century Afghanistan had small but old Jewish 
+                communities in Kabul, Herat, and the cities of the north. Most Afghan 
+                Jews emigrated to Israel in the 1950s, and the older members who stayed 
+                behind died off , so the community has now disappeared.
+            </p>
+            <!-- <blockquote>
+                "Those who cannot remember the past are condemned to repeat it." &mdash; George Santayana
+            </blockquote>
+            <p>
+                In this article, we explore key milestones in policy development, examining how historical events have influenced contemporary governance.
+            </p>
+            <ul>
+                <li>Ancient legal systems and their legacy</li>
+                <li>Major reforms in the 19th and 20th centuries</li>
+                <li>Contemporary policy challenges</li>
+            </ul>
+            <p>
+                For more information, visit <a href="#">our resources page</a>.
+            </p> -->
+        </div>
+    </div>
+</body>
+</html>

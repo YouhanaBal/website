@@ -1,0 +1,441 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding:0;
+    margin: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+}
+
+img{
+    width: 100%;
+    display: flex;
+    border-radius: 50%;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    font-family: 'poppins', sans-serif;
+    background-color: #18181b;
+}
+
+nav{
+    max-width: 1200px;
+    margin: auto;
+    padding: 2rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.nav-main-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.nav-4{
+    max-width: 100px;
+}
+
+.nav-links{
+    margin-right: 40px;
+    align-items: center;
+    list-style: none;
+    display: flex;
+    gap: 5rem;
+}
+
+.nav-links-container {
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+.link a{
+    position: relative;
+    padding-bottom: 0.75rem;
+    color: #fff;
+}
+
+.link a::after{
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #221153;
+    transition: all 0.6s ease;
+}
+
+.link a:hover::after{
+    width: 90%;
+}
+
+.btn{
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #1d4ed8;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-right: -100px; /* Added margin to the right */
+}
+
+.btn:hover{
+    background-color: #1e40af;   
+}
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+    padding: 5rem 2rem;
+
+}
+
+.blur{
+    position:absolute;
+    box-shadow: 0 0 1000px 50px #1d4ed8;
+    z-index: -100;
+}
+
+header{
+    position: relative;
+    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+}
+
+header .content h4{
+    margin-bottom: 2rem;
+    color: #ccc;
+    font-size: 1rem;
+    font-weight: 600;
+    font-size: 40px;
+}
+
+header .content h1 {
+    color: #fff;
+    margin-top: 20rem;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 4rem;
+    margin-bottom: 1rem;
+
+}
+
+header .content h1 span{
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px #fff;
+}
+
+header .content p{
+    margin-bottom: 2rem;
+    color: #ccc;
+
+}
+
+header .images{
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+header .image::before{
+    content: "o";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 38rem;
+    font-weight: 400;
+    line-height: 20rem;
+    color: #1d4ed8;
+    opacity: 0.2;
+    z-index: -100;
+
+
+}
+
+header .images img{
+    max-width: 600px;
+    margin: auto;
+}
+
+section .header{
+    margin-bottom: 1rem;
+    color: #fff;
+    text-align: center;
+    font-size: 2.25rem;
+    font-weight: 600;
+}
+
+.features{
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.features .card{
+    background-color: #27272a;
+    padding: 1rem;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.features .card:hover{
+    background-color: #323232;
+    border-color: #fff;
+}
+
+.features .card span{
+    display: inline-block;
+    background-color: #1e40af;
+    padding: 2px 9px;
+    margin-bottom: 1rem;
+    font-size: 1.75rem;
+    color: #fff;
+    border-radius: 5px;
+}
+
+
+.features .card h4{
+    margin-bottom: 0.5rem;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 600;
+
+}
+
+
+.features .card p{
+    color: #ccc;
+    margin-bottom: 1rem;
+
+}
+
+
+.features .card a{
+    color: #fff;
+    transition: all 0.3s ease;
+
+}
+
+.features .card a:hover{
+    color: #1e40af;
+}
+
+
+/* .Read_More {
+    max-width: 600px;
+    margin: 1rem auto;
+    text-align: center;
+    color: #ccc;
+}
+
+.Read_More .card {
+    background-color: #27272a;
+    padding: 1.5rem;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    margin-bottom: 1.5rem;
+}
+
+.Read_More .card:hover {
+    background-color: #323232;
+    border-color: #fff;
+}
+
+.Read_More .card h4 {
+    color: #fff;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+} */
+
+
+/* Replace your existing .Read_More styles with this: */
+.articles-container {
+    display: grid;
+    grid-template-columns: 1fr 300px; /* Main content | Sidebar */
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.articles-sidebar {
+    position: sticky;
+    top: 2rem;
+    align-self: start;
+}
+
+.Read_More {
+    margin-bottom: 1.5rem;
+}
+
+.Read_More .card {
+    background-color: #27272a;
+    padding: 1.5rem;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.Read_More .card:hover {
+    background-color: #323232;
+    border-color: #fff;
+}
+
+.Read_More .card h4 {
+    color: #fff;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    text-align: left;
+}
+
+.Read_More .card p {
+    margin-bottom: 0rem;
+    text-align: left;
+    font-size: 0.9rem;
+}
+
+.Read_More .card a {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    color: #fff;
+    background-color: #1d4ed8;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+    white-space: nowrap;
+    width: 100%;
+    justify-content: center;
+}
+
+.Read_More .card a:hover {
+    background-color: #1e40af;
+}
+
+/* Add or update this rule to reduce the space below the article intro */
+.articles-column .card p {
+    margin-bottom: 8px !important; /* Reduce from 16px to 8px */
+}
+
+.Read_More .card p {
+    margin-bottom: 1rem;
+}
+
+/* Update your Read More button styles */
+.Read_More .card a {
+    display: inline-flex; /* Use flex to better align icon */
+    align-items: center; /* Center items vertically */
+    padding: 0.5rem 1.2rem; /* Slightly more horizontal padding */
+    color: #fff;
+    background-color: #1d4ed8;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+    white-space: nowrap; /* Prevent text wrapping */
+    min-width: 120px; /* Ensure minimum width */
+    justify-content: center; /* Center content horizontally */
+}
+
+.Read_More .card a:hover {
+    background-color: #1e40af;
+}
+
+.Read_More .card a i {
+    margin-left: 0.3rem;
+    font-size: 1rem; /* Slightly larger icon */
+}
+
+.articles-column {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 32px;
+    min-height: 80vh;
+}
+
+.articles-card {
+    flex: 1;
+    min-height: 180px;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
+
+.articles-card p {
+    flex: 1;
+    font-size: 1.1em;
+    color: #fff;
+    margin-bottom: N6px;
+}
+
+.articles-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 32px;
+}
+
+.content .card{
+
+    max-width: 600px;
+    margin:auto;
+    text-align: center;
+    color:#ccc;
+
+}
+
+.articles-column h4{
+
+    font-size: 24px;
+}
+
+
+.articles-column a {
+    display: inline-flex; /* Use flex to better align icon */
+    align-items: center; /* Center items vertically */
+    padding: 0.5rem 1.2rem; /* Slightly more horizontal padding */
+    color: #fff;
+    /* background-color: #1d4ed8; */
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+    white-space: nowrap; /* Prevent text wrapping */
+    min-width: 120px; /* Ensure minimum width */
+    justify-content: center; /* Center content horizontally */
+    max-width: 20px;
+}
+
+
+
+.articles-column a:hover {
+    background-color: #1e40af;
+}
+
+
+
+
+
+
+
+
